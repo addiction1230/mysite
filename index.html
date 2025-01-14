@@ -1,42 +1,95 @@
 <!DOCTYPE html>
-<html lang="ja">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ポートフォリオサイト</title>
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header>
-    <img src="icon.png" alt="アイコン" width="128" height="128">
-    <h1>ポートフォリオ集</h1>
-    <p>wonder_wayのポートフォリオサイトです</p>
-
+  <header class="header">
+    <div class="container">
+      <h1>My Portfolio</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main>
-    <h2>ポートフォリオ</h2>
 
-    <h3>Instagram広告</h3>
-    <img src="instagram mag1.jpg" alt="インスタ雑誌広告" width="320" height="320">
-    <p>架空の雑誌のInstagram広告です。</p>
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project">
+          <img src="instagram 雑誌広告.jpg" alt="Project 1">
+          <h3>Project 1</h3>
+          <p>Brief description of the project.</p>
+        </div>
+        <div class="project">
+          <img src="Instagram post - 1.jpg" alt="Project 2">
+          <h3>Project 2</h3>
+          <p>Brief description of the project.</p>
+        </div>
+        <div class="project">
+          <img src="catcat.poster2209.jpg" alt="Project 3">
+          <h3>Project 3</h3>
+          <p>Brief description of the project.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <h3>Instagram広告</h3>
-    <img src="catcat.poster2209.jpg" alt="文字色白" width="320" height="320">
-    <p>架空のミュージカルのポスター【白】</p>
+  <section id="profile" class="profile">
+    <div class="profile-container">
+      <h2>About Me</h2>
+      <p>初めまして!サイトをご覧いただき、ありがとうございます。about87back、もしくはwonder_wayという名義で活動しております。現在はバナー・広告デザイン、WEBコーディングを中心に活動しております。</p>
 
-    <h3>Instagram広告</h3>
-    <img src="catcat.poster220.jpg" alt="文字色赤" width="320" height="320">
-    <p>架空のミュージカルのポスター【赤】</p>
+      <div class="profile-details">
+        <div class="profile-item">
+          <h3>稼働時間</h3>
+          <p>下記時間内にメール等のチェック・返信、作業や制作物の納品を行います。<br>お急ぎの場合や時間外に対応が必要な場合はご相談ください。</p>
+          <p>平日 午前9時～午後5時<br>土日・祝日 応相談</p>
+        </div>
+        <div class="profile-item">
+          <h3>業務内容</h3>
+          <ul>
+            <li>バナー・広告デザイン</li>
+            <li>ヘッダー・サムネイルデザイン</li>
+            <li>コーディング業務</li>
+            <li>コーポレートサイト作成</li>
+          </ul>
+        </div>
+        <div class="additional-text">
+          <p>
+            FigmaやCANVAを使ったバナーや広告デザイン、サムネイル作成を得意としています。また、Web制作・Webデザインについては勉強中ですが、HTMLの基本的な知識は習得しております。
+          </p>
+        </div>
 
+        
+      </div>
+    </div>
+  </section>
 
-  </main>
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
 
-
-  <footer>
-    <small>made by wonder_way</small>
+  <footer class="footer">
+    <div class="container">
+      <small><p>&copy; 2025 My Portfolio. All rights reserved.</p></small>
+    </div>
   </footer>
 </body>
-
 </html>
